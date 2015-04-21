@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="SegmentedControlButton">
+        <attr name="segmentedControlButtonStyle" format="string" />
+
+        <attr name="textAllCaps2" format="boolean" />
+
+        <attr name="lineColor2" format="color" />
+        <attr name="lineHeightUnselected" format="dimension" />
+        <attr name="lineHeightSelected" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="TabControlButton">
+        <attr name="tabControlButtonStyle" format="string" />
+    </declare-styleable>
+
+</resources>
