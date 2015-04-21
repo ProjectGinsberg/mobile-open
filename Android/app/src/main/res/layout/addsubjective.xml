@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:weightSum="1"
+              android:background="@drawable/bg"
+    >
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12th Sep 2014"
+        android:id="@+id/tvQuestDate"
+        android:layout_gravity="top|center_horizontal"
+        android:textColor="#ffffffff"
+        android:layout_marginTop="20dp"
+        android:textSize="16dp"
+        android:textIsSelectable="false"
+        android:gravity="center" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="1140dp"
+        android:layout_height="500dp"
+        android:id="@+id/llQuestions"
+        android:layout_marginTop="70dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="380dp"
+            android:layout_height="fill_parent"
+            android:id="@+id/p1">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="I've been feeling able to do things I needed to"
+                android:id="@+id/q1"
+                android:textColor="#ffffffff"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_marginTop="10dp"
+                android:lines="3" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:text="STRONGLY AGREE"
+                android:id="@+id/a11"
+                android:onClick="pressedSelectionButton"
+                android:layout_marginTop="20dp"
+                android:textColor="#ffffffff"
+                android:background="#00ffffff"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"/>
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:text="AGREE"
+                android:id="@+id/a12"
+                android:onClick="pressedSelectionButton"
+                android:textColor="#ffffffff"
+                android:background="#00ffffff"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"/>
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:text="UNDECIDED"
+                android:id="@+id/a13"
+                android:onClick="pressedSelectionButton"
+                android:textColor="#ffffffff"
+                android:background="#00ffffff"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:text="DISAGREE"
+                android:id="@+id/a14"
+                android:onClick="pressedSelectionButton"
+                android:textColor="#ffffffff"
+                android:background="#00ffffff"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"/>
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:text="STRONGLY DISAGREE"
+                android:id="@+id/a15"
+                android:onClick="pressedSelectionButton"
+                android:textColor="#ffffffff"
+                android:background="#00ffffff"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView2"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/pagination30xxxhdpi"
+                android:layout_marginTop="30dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="380dp"
+            android:layout_height="fill_parent"
+            android:id="@+id/p2">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="q2"
+                android:id="@+id/q2"
+                android:layout_marginTop="10dp"
+                android:textColor="#ffffffff"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_vertical|center_horizontal"
+                android:lines="3" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:text="STRONGLY AGREE"
+                android:id="@+id/a21"
+                android:onClick="pressedSelectionButton"
+                android:layout_marginTop="20dp"
+                android:textColor="#ffffffff"
+                android:background="#00ffffff"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"/>
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:text="AGREE"
+                android:id="@+id/a22"
+                android:onClick="pressedSelectionButton"
+                android:textColor="#ffffffff"
+                android:background="#00ffffff"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"/>
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:text="UNDECIDED"
+                android:id="@+id/a23"
+                android:onClick="pressedSelectionButton"
+                android:textColor="#ffffffff"
+                android:background="#00ffffff"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"/>
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:text="DISAGREE"
+                android:id="@+id/a24"
+                android:onClick="pressedSelectionButton"
+                android:textColor="#ffffffff"
+                android:background="#00ffffff"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"/>
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:text="STRONGLY DISAGREE"
+                android:id="@+id/a25"
+                android:singleLine="false"
+                android:onClick="pressedSelectionButton"
+                android:textColor="#ffffffff"
+                android:background="#00ffffff"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView3"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/pagination31xxxhdpi"
+                android:layout_marginTop="30dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="380dp"
+            android:layout_height="fill_parent"
+            android:id="@+id/p3">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="I've been feeling able to do things I needed to"
+                android:id="@+id/q3"
+                android:textColor="#ffffffff"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_vertical|center_horizontal"
+                android:lines="3" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:text="STRONGLY AGREE"
+                android:id="@+id/a31"
+                android:onClick="pressedSelectionButton"
+                android:layout_marginTop="20dp"
+                android:textColor="#ffffffff"
+                android:background="#00ffffff"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"/>
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:text="AGREE"
+                android:id="@+id/a32"
+                android:onClick="pressedSelectionButton"
+                android:textColor="#ffffffff"
+                android:background="#00ffffff"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"/>
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:text="UNDECIDED"
+                android:id="@+id/a33"
+                android:onClick="pressedSelectionButton"
+                android:textColor="#ffffffff"
+                android:background="#00ffffff"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"/>
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:text="DISAGREE"
+                android:id="@+id/a34"
+                android:onClick="pressedSelectionButton"
+                android:textColor="#ffffffff"
+                android:background="#00ffffff"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"/>
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:text="STRONGLY DISAGREE"
+                android:id="@+id/a35"
+                android:onClick="pressedSelectionButton"
+                android:textColor="#ffffffff"
+                android:background="#00ffffff"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView4"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/pagination32xxxhdpi"
+                android:layout_marginTop="30dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/flDone">
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/imageView"
+            android:background="@drawable/bg" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="12th Sep 2014"
+                android:id="@+id/tvDate"
+                android:layout_gravity="center"
+                android:textColor="#ffffffff"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Data entered for today"
+                android:id="@+id/tvDoney"
+                android:layout_gravity="center_horizontal"
+                android:singleLine="true"
+                android:textColor="#ffffffff"
+                android:textSize="20dp" />
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:text="VIEW DASHBOARD"
+                android:id="@+id/btWeb"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/btround"
+                android:textColor="#ff77c39c"
+                android:layout_marginTop="50dp"
+                android:textStyle="bold"
+                android:onClick="pressedViewDashBoard"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btMenu"
+            android:background="@drawable/iconmenu2x"
+            android:enabled="true"
+            android:layout_gravity="top|right"
+            android:onClick="pressedSettingsOpen"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="5dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="10dp">
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:id="@+id/btReenter"
+                android:onClick="pressedReenter"
+                android:background="@drawable/btround"
+                android:textColor="#ff5cbabc"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="UPDATE QUESTIONS"
+                android:textSize="13dp" />
+
+            <Button
+                android:layout_width="130dp"
+                android:layout_height="40dp"
+                android:text="UPDATE EVENTS"
+                android:id="@+id/btSubDone"
+                android:layout_gravity="bottom|center_horizontal|right"
+                android:onClick="pressedDone"
+                android:background="@drawable/btround"
+                android:textColor="#ff5cbabc"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="13dp" />
+        </LinearLayout>
+
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/flDate">
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/ivDate"
+            android:background="@drawable/bg" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center">
+
+            <TimePicker
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tpNotify"
+                android:layout_gravity="center" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enable Notification"
+                android:id="@+id/cbNotify"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:textColor="#ffffffff" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="101dp"
+                android:layout_height="40dp"
+                android:text="CLOSE"
+                android:id="@+id/btDone"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/btround"
+                android:layout_marginTop="20dp"
+                android:onClick="pressedSettingsClose"
+                android:textColor="#ff76c3ac" />
+        </LinearLayout>
+
+    </FrameLayout>
+
+</FrameLayout>

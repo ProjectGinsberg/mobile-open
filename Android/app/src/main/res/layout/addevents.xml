@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bgtemp22x"
+    android:id="@+id/rlEvents"
+    >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Today 15th Jul, 2014"
+        android:id="@+id/tvEventDate"
+        android:layout_alignParentLeft="false"
+        android:textColor="#ffffffff"
+        android:textSize="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentEnd="true"
+        android:gravity="top|center" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#64ffffff"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/rlEventsBottom"
+        android:layout_marginTop="30dp"
+        android:id="@+id/flEvents">
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/imageView5"
+            android:background="#ffffffff" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/etEventEvent"
+            android:hint="Event text"
+            android:textColor="#ff000000"
+            android:gravity="top|left"
+            android:scrollHorizontally="false"
+            android:background="#ffffffff"
+            android:inputType="textNoSuggestions|text|textMultiLine"
+            android:imeOptions="normal"
+            android:singleLine="true"
+            android:lines="50"
+            android:textSize="24dp"
+            android:onClick="pressedEvents"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginBottom="15dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="250dp"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/rlEventsBottom"
+        >
+
+<!--
+        <RadioGroup
+            android:id="@+id/rgInput"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:layout_alignParentTop="false"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="10dp"
+            android:visibility="gone">
+
+            <com.ginsberg.appshared.SegmentedControlButton
+                android:id="@+id/option1"
+                android:text="Keyboard"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="#ffb3ff59"
+                android:onClick="pressedShowKeyboard" />
+
+            <com.ginsberg.appshared.SegmentedControlButton
+                android:id="@+id/option2"
+                android:text="Hashtags"
+                android:layout_width="100dp"
+                android:layout_height="fill_parent"
+                android:background="#fffff488"
+                android:onClick="pressedHideKeyboard" />
+        </RadioGroup>
+-->
+
+        <com.ginsberg.ginsberg.segmentcontrol.SegmentedGroup
+            android:id="@+id/sgInputType"
+            android:layout_width="240dp"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp">
+
+            <RadioButton
+                android:id="@+id/rbKeyboard"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text="KEYBOARD"
+                style="@style/RBInputType"
+                android:onClick="pressedShowKeyboard"
+                android:gravity="center" />
+
+            <RadioButton
+                android:id="@+id/rbHashtag"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text="HASHTAGS"
+                style="@style/RBInputType"
+                android:onClick="pressedHideKeyboard"
+                android:textAlignment="center"
+                android:gravity="center" />
+
+        </com.ginsberg.ginsberg.segmentcontrol.SegmentedGroup>
+
+        <!--
+        <com.ginsberg.appshared.SegmentedGroup
+            android:id="@+id/rgInput2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button22"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Two"/>
+            <Button
+                android:id="@+id/button21"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="One"
+                />
+
+            <RadioButton
+                android:id="@+id/button21"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Keyboard"
+                style="@style/RadioButton">
+            </RadioButton>
+            <RadioButton
+                android:id="@+id/button22"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:text="Hashtags"
+                style="@style/RadioButton" />
+        </com.ginsberg.appshared.SegmentedGroup>
+-->
+
+        <Button
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:text="SAVE"
+            android:id="@+id/btEventDone"
+            android:background="@drawable/btround"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:textColor="#ffc57eab"
+            android:textSize="16dp"
+            android:onClick="pressedEventsDone"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp" />
+
+
+        <com.ginsberg.ginsberg.segmentcontrol.SegmentedGroup
+            android:id="@+id/sgTagType"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:layout_alignParentStart="false"
+            android:layout_below="@+id/btEventDone"
+            android:layout_marginTop="10dp">
+
+            <RadioButton
+                android:id="@+id/rbRecent"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text="RECENT"
+                android:gravity="center"
+                style="@style/RBTagType"
+                android:onClick="pressedTagsRecent" />
+
+            <RadioButton
+                android:id="@+id/rbUsed"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text="MOST USED"
+                android:gravity="center"
+                style="@style/RBTagType"
+                android:onClick="pressedTagsMostUsed"/>
+
+            <RadioButton
+                android:id="@+id/rbEmotions"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="EMOTIONS"
+                style="@style/RBTagType"
+                android:onClick="pressedTagsEmotions" />
+
+            <RadioButton
+                android:id="@+id/rbScots"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="SCOTS"
+                style="@style/RBTagType"
+                android:onClick="pressedTagsScots"/>
+
+        </com.ginsberg.ginsberg.segmentcontrol.SegmentedGroup>
+<!--
+        <RadioGroup
+            android:id="@+id/buttongroup2"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:layout_alignParentTop="false"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="80dp">
+
+            <com.ginsberg.appshared.TabControlButton
+                android:id="@+id/option21"
+                android:text="Recent"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="left|bottom"
+                android:gravity="bottom"
+                android:onClick="pressedTagsRecent" />
+
+            <com.ginsberg.appshared.TabControlButton
+                android:id="@+id/option22"
+                android:text="Most Used"
+                android:layout_width="100dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="bottom"
+                android:gravity="bottom"
+                android:onClick="pressedTagsMostUsed" />
+
+            <com.ginsberg.appshared.TabControlButton
+                android:id="@+id/option23"
+                android:text="Emotions"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="bottom"
+                android:gravity="bottom"
+                android:onClick="pressedTagsEmotions" />
+
+            <com.ginsberg.appshared.TabControlButton
+                android:id="@+id/option24"
+                android:text="Scots"
+                android:layout_width="100dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="bottom|right"
+                android:gravity="bottom"
+                android:onClick="pressedTagsScots" />
+        </RadioGroup>
+-->
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/svEventTags"
+            android:layout_gravity="bottom"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/sgTagType"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" android:id="@+id/llTags">
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

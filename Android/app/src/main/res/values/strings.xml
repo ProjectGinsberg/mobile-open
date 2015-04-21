@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Ginsberg</string>
+
+    <string-array name="period_arrays">
+        <item>All</item>
+        <item>ID</item>
+        <item>From</item>
+        <item>To</item>
+        <item>FromTo</item>
+    </string-array>
+
+    <string-array name="period_time_arrays">
+        <item>yesterday</item>
+        <item>lastweek</item>
+        <item>lastmonth</item>
+        <item>lastyear</item>
+        <item>Date</item>
+    </string-array>
+
+    <string-array name="type_arrays">
+        <item>Activity</item>
+        <item>Alcohol</item>
+        <item>Body</item>
+        <item>Caffeine</item>
+        <item>Exercise</item>
+        <item>Events</item>
+        <item>Measures</item>
+        <item>Notifications</item>
+        <item>Nutrition</item>
+        <item>Sleep</item>
+        <item>Smoking</item>
+        <item>Social</item>
+        <item>Stepcount</item>
+        <item>Survey</item>
+        <item>Wellbeing</item>
+    </string-array>
+    <!--
+    <string-array name="emotion_arrays">
+        <item>Happy</item>
+        <item>Sad</item>
+        <item>Uneasy</item>
+        <item>Well</item>
+        <item>Terrified</item>
+        <item>Bright</item>
+        <item>Depressed</item>
+        <item>Apprehensive</item>
+        <item>Satisfied</item>
+        <item>Lost</item>
+        <item>Frustrated</item>
+        <item>Aggressive</item>
+        <item>Cheated</item>
+        <item>Alone</item>
+        <item>Contented</item>
+        <item>Nervous</item>
+        <item>Affectionate</item>
+        <item>Engaged</item>
+        <item>Hopeful</item>
+        <item>Confident</item>
+        <item>Excited</item>
+        <item>Grateful</item>
+        <item>Inspired</item>
+        <item>Joyful</item>
+        <item>Exhilarated</item>
+        <item>Peaceful</item>
+        <item>Refreshed</item>
+        <item>Afraid</item>
+        <item>Annoyed</item>
+        <item>Angry</item>
+        <item>Aversion</item>
+        <item>Confused</item>
+        <item>Disconnected</item>
+        <item>Disquiet</item>
+        <item>Embarrassed</item>
+        <item>Fatigue</item>
+        <item>Pain</item>
+        <item>Tense</item>
+        <item>Vulnerable</item>
+        <item>Yearning</item>
+    </string-array>
+    -->
+</resources>

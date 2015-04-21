@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Attributes for SegmentedControlView -->
+    <declare-styleable name="SegmentedControlView">
+        <!-- Set background for the first button -->
+        <attr name="firstButtonBackground" format="reference|color" />
+        <!-- Set background for the last button -->
+        <attr name="lastButtonBackground" format="reference|color" />
+        <!-- Set background for the middle button -->
+        <attr name="middleButtonBackground" format="reference|color" />
+        <!-- Set background when there is only one button -->
+        <attr name="uniqueButtonBackground" format="reference|color" />
+        <!-- Allow SegmentedControlView to access the attribute android:orientation -->
+        <attr name="android:orientation" />
+    </declare-styleable>
+    
+    <!-- Attributes for ProportionalLayout -->
+    <declare-styleable name="ProportionalLayout">
+        <!-- Rate of width/height -->
+        <attr name="proportion" format="float" />
+    </declare-styleable>
+
+    <!-- Attributes for RoundedCornerImageView -->
+    <declare-styleable name="RoundedCornerImageView">
+        <!-- Corner radius -->
+        <attr name="cornerRadius" format="dimension" />
+    </declare-styleable>
+</resources>

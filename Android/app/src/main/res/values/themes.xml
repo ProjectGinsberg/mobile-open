@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<style name="AppTheme" parent="@android:style/Theme">
+        <item name="segmentedControlButtonStyle">@style/Widget.Holo.SegmentedControl</item>
+        <item name="tabControlButtonStyle">@style/Widget.Holo.TabControl</item>
+    </style>-->
+    <!--<style name="AppTheme" parent="Theme.AppCompat.Light">
+        <item name="segmentedControlButtonStyle">@style/Widget.Holo.SegmentedControl</item>
+        <item name="tabControlButtonStyle">@style/Widget.Holo.TabControl</item>
+    </style>-->
+
+    <style name="CustomTheme" parent="@android:style/Theme">
+        <item name="segmentedControlButtonStyle">@style/Widget.Holo.SegmentedControl</item>
+        <item name="tabControlButtonStyle">@style/Widget.Holo.TabControl</item>
+    </style>
+</resources>

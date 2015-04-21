@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:weightSum="1"
+              android:background="@drawable/bg">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/logoginsberg2"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="203dp"
+        android:layout_gravity="center_horizontal|bottom">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Already have an acount?"
+            android:id="@+id/lbLogin"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_weight="0.03"
+            android:gravity="bottom"
+            android:textColor="#ffffffff"
+            android:textSize="18dp" />
+
+        <com.ginsberg.appshared.HLButton
+            android:layout_width="190dp"
+            android:layout_height="40dp"
+            android:text="LOGIN TO GET STARTED"
+            android:id="@+id/btLogin"
+            android:layout_gravity="center_horizontal|bottom"
+            style="@style/AppTheme"
+            android:onClick="pressedLogin"
+            android:textColor="#ff5cbabc"
+            android:textSize="12dp"
+            android:background="@drawable/btround"
+            android:layout_marginBottom="10dp"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/greyoverlay"
+        android:background="#80000000"
+        />
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pbActivity"
+        android:layout_gravity="center" />
+
+</FrameLayout>
