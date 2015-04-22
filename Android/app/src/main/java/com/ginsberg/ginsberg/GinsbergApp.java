@@ -56,7 +56,7 @@ public class GinsbergApp extends Application
         if (!mTrackers.containsKey(trackerId))
         {
             GoogleAnalytics analytics = GoogleAnalytics.getInstance(this);
-            Tracker t = (trackerId == TrackerName.APP_TRACKER) ? analytics.newTracker("UA-44891997-3")
+            Tracker t = (trackerId == TrackerName.APP_TRACKER) ? analytics.newTracker(getString(R.string.google_code_example))
                     : (trackerId == TrackerName.GLOBAL_TRACKER) ? analytics.newTracker(R.xml.global_tracker)
                     : analytics.newTracker(R.xml.ecommerce_tracker);
             mTrackers.put(trackerId, t);

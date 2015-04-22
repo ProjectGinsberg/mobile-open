@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+package="com.ginsberg.ginsberg" >
+
+<uses-permission android:name="android.permission.INTERNET" />
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+<uses-permission android:name="android.permission.WAKE_LOCK" />
+
+<application
+    android:allowBackup="true"
+    android:icon="@drawable/ic_launcher"
+    android:label="@string/app_name"
+    android:screenOrientation="portrait"
+    android:configChanges="keyboardHidden|orientation|screenSize"
+    android:theme="@style/AppTheme"
+    android:launchMode="singleTop"
+    android:name="com.ginsberg.ginsberg.GinsbergApp">
+
+    <activity
+        android:name=".Login"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+        android:configChanges="keyboardHidden|orientation|screenSize"
+        android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+        android:launchMode="singleTop">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
+
+    <activity
+        android:name=".Main"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+        android:configChanges="keyboardHidden|orientation|screenSize"
+        android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+        android:launchMode="singleTop">
+    </activity>
+
+    <activity
+        android:name=".AddSubjective"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+        android:configChanges="keyboardHidden|orientation|screenSize"
+        android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+        android:launchMode="singleTop">
+    </activity>
+
+    <activity
+        android:name=".AddEvents"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+        android:configChanges="keyboardHidden|orientation|screenSize"
+        android:launchMode="singleTop"
+        android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+        android:windowSoftInputMode="adjustResize|stateAlwaysVisible">
+    </activity>
+
+    <activity android:name=".segmentcontrol.SegmentedControlDemoActivity"
+        android:label="SegmentedControlDemo"
+        android:theme="@android:style/Theme.Light"
+        />
+
+    <activity
+        android:name=".SampleActivity"
+        android:label="@string/app_name">
+    <!--    <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    --></activity>
+
+    <meta-data android:name="com.google.android.gms.version"
+               android:value="@integer/google_play_services_version" />
+    <meta-data android:name="LOCALYTICS_APP_KEY"
+               android:value="553f775248e3df4f38698c6-3f9dfeab-42b3-14e4-c03d-005ce4dbabd8"/>
+    <meta-data android:name="com.crashlytics.ApiKey"
+               android:value="ea5359429b52a4673623751d9b5e35d5a4413d55"/>
+
+    <service android:name="com.ginsberg.ginsberg.ScheduleService" />
+    <service android:name="com.ginsberg.ginsberg.NotifyService" />
+
+</application>
+
+</manifest>
+
+<!--
+<application android:icon="@drawable/icon" android:label="@string/app_name"
+             android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+<activity android:name=".SplashScreen" android:screenOrientation="landscape">
+    <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+    </intent-filter>
+</activity>
+<activity android:name=".MainApp" android:screenOrientation="landscape">
+</activity>
+</application>
+-->
