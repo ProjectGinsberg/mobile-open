@@ -6,8 +6,7 @@ The Ginsberg Mobile App demonstrates the full life cycle of interacting with the
 ## Contents
 
 - [Requirements](#requirements)
-- [Implementation Overview](#implementation-overview)
-- [Example App](#example-app) 
+- [Implementation](#implementation)
 
 ## Requirements
 
